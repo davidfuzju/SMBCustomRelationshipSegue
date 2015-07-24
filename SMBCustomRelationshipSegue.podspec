@@ -10,14 +10,16 @@
 Pod::Spec.new do |s|
   s.name             = "SMBCustomRelationshipSegue"
   s.version          = "0.1.0"
-  s.summary          = "a simple implementation for custom relationship segue, enhance the custom container view controller in storyboard like UINavigationController or UITabbarController"
+  s.summary          = "a simple implementation for custom relationship segue"
   s.description      = <<-DESC
+                        SMBCustomRelationshipSegue is a simple implementation for custom relationship segue, enhance the custom container view controller in storyboard like UINavigationController or UITabbarController. if you are developer who like storyboard and want use it to show your view contorller logic on storyboard to make life easy, SMBCustomRelationshipSegue should be in your toolbox
+
                        DESC
   s.homepage         = "https://github.com/SuperMarioBean/SMBCustomRelationshipSegue"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "David Fu" => "david.fu.zju.dev@gmail.com" }
-  s.source           = { :git => "git@github.com:SuperMarioBean/SMBCustomRelationshipSegue.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/SuperMarioBean/SMBCustomRelationshipSegue.git", :tag => s.version.to_s }
 # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'

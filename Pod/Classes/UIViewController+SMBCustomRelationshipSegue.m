@@ -120,7 +120,7 @@
     BOOL flag = YES;
     NSUInteger index = 0;
     while (flag) {
-        NSString *segueIdentifier = [NSString stringWithFormat:@"relationship_%@_%u", selectorString, index];
+        NSString *segueIdentifier = [NSString stringWithFormat:@"relationship_%@_%lu", selectorString, (unsigned long)index];
         @try {
             [self performSegueWithIdentifier:segueIdentifier sender:self];
         }
