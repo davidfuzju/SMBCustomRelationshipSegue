@@ -41,7 +41,7 @@ return the array of your property names which you want build a relationship, the
 
 			relationship_{{propertyName}}_{{index}}
 
-and you should ensure the index continuous
+you should ensure the index is continuous and started with 0
 
 then it’s OK! followings are screenshot building relationships:
 
