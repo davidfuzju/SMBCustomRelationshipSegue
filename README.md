@@ -9,7 +9,7 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-I have do my best to make the custom container view controller setup their relationship between other child view controller looks like Apple’s UINavigtaionController or UITabbarController do in storyboard.
+I've managed to make the custom container view controller set up relationship with its child view controllers looks as Apple’s UINavigtaionController or UITabbarController do in storyboard.
 
 there are two examples in example folder:
 
@@ -17,13 +17,13 @@ there are two examples in example folder:
 
 	this example uses `RESideMenu` as a custom container view controller to show how to use `SMBCustomRelationshipSegue` make your storyboard continuous and meaningful
 
-	BTW, `RESideMenu` is a very beautiful custom container view controller and the lib itself is worth learning. here is the [link][4]
+	> `RESideMenu` is a very beautiful custom container view controller and here is the [link][4]
 
 + container
 
-	this example is inspired by objc.io’s [Custom Container View Controller Transitions][5] and the repo is [here][6]. In that repo, the project use full hand code to implement the custom container view controller, and I change it with `SMBCustomRelationshipSegue`, make the relationship between child view controllers and container view controller be seen in storyboard
+	this example is inspired by objc.io’s [Custom Container View Controller Transitions][5] and the repo is [here][6]. In that repo, the project implement the custom container view controller without any interface file, and I update it with `SMBCustomRelationshipSegue`, now the relationship between container view controller and child view controllers can be seen in storyboard
 
-`SMBCustomRelationshipSegue` support `one to one` relationship(like UINavigationController’s rootViewController relationship segue) and `one to many` relationship (like UITabbarController’s viewControllers relationship segue). all you need to do are just two step:
+`SMBCustomRelationshipSegue` now supports `one to one` relationship(like UINavigationController’s rootViewController relationship segue) and `one to many` relationship (like UITabbarController’s viewControllers relationship segue). all you need to do are just two steps:
 
 1. subclass your view controller or UIViewController, overwrite the method:
 
@@ -33,10 +33,17 @@ return the array of your property names which you want build a relationship, the
 
 2. you need control drag your storyboard. link a `custom relation ship` segue between container view controller and child view controllers. and name the segue identifier .
 
-		one to one relationship should name with format "relationship_{{propertyName}}"
-		one to many relationship should name with format "relationship_{{propertyName}}_{{index}}", and you should ensure the index continuous
+	+ `one to one` relationship should name with format 
 
-then it’s OK!followings are screenshot building relationships:
+			relationship_{{propertyName}}"
+
+	+ `one to many` relationship should name with format 
+
+			relationship_{{propertyName}}_{{index}}
+
+and you should ensure the index continuous
+
+then it’s OK! followings are screenshot building relationships:
 
 ![][image-4]
 ![][image-5]
@@ -52,9 +59,7 @@ iOS 7.0 and iOS 7.0 +
 SMBCustomRelationshipSegue is available through [CocoaPods][7]. To install
 it, simply add the following line to your Podfile:
 
-\`\`\`ruby
-pod "SMBCustomRelationshipSegue"
-\`\`\`
+	pod "SMBCustomRelationshipSegue"
 
 ## Author
 
