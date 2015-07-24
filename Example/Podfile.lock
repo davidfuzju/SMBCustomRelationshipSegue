@@ -1,0 +1,17 @@
+PODS:
+  - RESideMenu (4.0.7)
+  - SMBCustomRelationshipSegue (0.1.0)
+
+DEPENDENCIES:
+  - RESideMenu
+  - SMBCustomRelationshipSegue (from `../`)
+
+EXTERNAL SOURCES:
+  SMBCustomRelationshipSegue:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RESideMenu: f24c508404b49c667344c54aba7e590883533958
+  SMBCustomRelationshipSegue: 5a45ea533df01ba22fda16b32da61e126eb321fa
+
+COCOAPODS: 0.38.0

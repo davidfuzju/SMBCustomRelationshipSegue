@@ -15,13 +15,17 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* SMBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* SMBAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* SMBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* SMBViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		63E85C611B6224C3006CA4AE /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E85C581B6224C3006CA4AE /* Animator.m */; };
+		63E85C621B6224C3006CA4AE /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E85C5A1B6224C3006CA4AE /* ChildViewController.m */; };
+		63E85C631B6224C3006CA4AE /* ContainerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E85C5C1B6224C3006CA4AE /* ContainerDelegate.m */; };
+		63E85C641B6224C3006CA4AE /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E85C5E1B6224C3006CA4AE /* ContainerViewController.m */; };
+		63E85C651B6224C3006CA4AE /* SMBSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E85C601B6224C3006CA4AE /* SMBSideMenuViewController.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +43,7 @@
 		0EF42EDE452AFD8DD6A86CA5 /* Pods_SMBCustomRelationshipSegue_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMBCustomRelationshipSegue_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		232EED0DB4CEC7DEFEEB09C3 /* Pods-SMBCustomRelationshipSegue_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMBCustomRelationshipSegue_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SMBCustomRelationshipSegue_Tests/Pods-SMBCustomRelationshipSegue_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3DA4D1A1E29931427750570E /* Pods-SMBCustomRelationshipSegue_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMBCustomRelationshipSegue_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SMBCustomRelationshipSegue_Tests/Pods-SMBCustomRelationshipSegue_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* SMBCustomRelationshipSegue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SMBCustomRelationshipSegue.app; path = SMBCustomRelationshipSegue_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* SMBCustomRelationshipSegue_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMBCustomRelationshipSegue_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -49,15 +53,23 @@
 		6003F59B195388D20070C39A /* SMBCustomRelationshipSegue-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SMBCustomRelationshipSegue-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* SMBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMBAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* SMBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMBAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* SMBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMBViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* SMBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMBViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = SMBCustomRelationshipSegue_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* SMBCustomRelationshipSegue_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMBCustomRelationshipSegue_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		63E85C571B6224C3006CA4AE /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
+		63E85C581B6224C3006CA4AE /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
+		63E85C591B6224C3006CA4AE /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
+		63E85C5A1B6224C3006CA4AE /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
+		63E85C5B1B6224C3006CA4AE /* ContainerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerDelegate.h; sourceTree = "<group>"; };
+		63E85C5C1B6224C3006CA4AE /* ContainerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerDelegate.m; sourceTree = "<group>"; };
+		63E85C5D1B6224C3006CA4AE /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		63E85C5E1B6224C3006CA4AE /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		63E85C5F1B6224C3006CA4AE /* SMBSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMBSideMenuViewController.h; sourceTree = "<group>"; };
+		63E85C601B6224C3006CA4AE /* SMBSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMBSideMenuViewController.m; sourceTree = "<group>"; };
 		6471990277765867802FE7D2 /* Pods-SMBCustomRelationshipSegue_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMBCustomRelationshipSegue_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SMBCustomRelationshipSegue_Example/Pods-SMBCustomRelationshipSegue_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		665FA6D35A077069116AB59F /* SMBCustomRelationshipSegue.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SMBCustomRelationshipSegue.podspec; path = ../SMBCustomRelationshipSegue.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -108,8 +120,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* SMBCustomRelationshipSegue.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* SMBCustomRelationshipSegue_Example.app */,
+				6003F5AE195388D20070C39A /* SMBCustomRelationshipSegue_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,11 +142,9 @@
 		6003F593195388D20070C39A /* Example for SMBCustomRelationshipSegue */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* SMBAppDelegate.h */,
-				6003F59D195388D20070C39A /* SMBAppDelegate.m */,
+				63E85C671B6224ED006CA4AE /* container */,
+				63E85C661B6224DA006CA4AE /* sidemenu */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* SMBViewController.h */,
-				6003F5A6195388D20070C39A /* SMBViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -182,6 +192,32 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		63E85C661B6224DA006CA4AE /* sidemenu */ = {
+			isa = PBXGroup;
+			children = (
+				63E85C5F1B6224C3006CA4AE /* SMBSideMenuViewController.h */,
+				63E85C601B6224C3006CA4AE /* SMBSideMenuViewController.m */,
+			);
+			name = sidemenu;
+			sourceTree = "<group>";
+		};
+		63E85C671B6224ED006CA4AE /* container */ = {
+			isa = PBXGroup;
+			children = (
+				63E85C571B6224C3006CA4AE /* Animator.h */,
+				63E85C581B6224C3006CA4AE /* Animator.m */,
+				63E85C591B6224C3006CA4AE /* ChildViewController.h */,
+				63E85C5A1B6224C3006CA4AE /* ChildViewController.m */,
+				63E85C5B1B6224C3006CA4AE /* ContainerDelegate.h */,
+				63E85C5C1B6224C3006CA4AE /* ContainerDelegate.m */,
+				63E85C5D1B6224C3006CA4AE /* ContainerViewController.h */,
+				63E85C5E1B6224C3006CA4AE /* ContainerViewController.m */,
+				6003F59C195388D20070C39A /* SMBAppDelegate.h */,
+				6003F59D195388D20070C39A /* SMBAppDelegate.m */,
+			);
+			name = container;
+			sourceTree = "<group>";
+		};
 		C190314B549A5CE628BC8448 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +249,7 @@
 			);
 			name = SMBCustomRelationshipSegue_Example;
 			productName = SMBCustomRelationshipSegue;
-			productReference = 6003F58A195388D20070C39A /* SMBCustomRelationshipSegue.app */;
+			productReference = 6003F58A195388D20070C39A /* SMBCustomRelationshipSegue_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* SMBCustomRelationshipSegue_Tests */ = {
@@ -234,7 +270,7 @@
 			);
 			name = SMBCustomRelationshipSegue_Tests;
 			productName = SMBCustomRelationshipSegueTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* SMBCustomRelationshipSegue_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -390,8 +426,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E85C631B6224C3006CA4AE /* ContainerDelegate.m in Sources */,
+				63E85C651B6224C3006CA4AE /* SMBSideMenuViewController.m in Sources */,
+				63E85C611B6224C3006CA4AE /* Animator.m in Sources */,
+				63E85C641B6224C3006CA4AE /* ContainerViewController.m in Sources */,
 				6003F59E195388D20070C39A /* SMBAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* SMBViewController.m in Sources */,
+				63E85C621B6224C3006CA4AE /* ChildViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

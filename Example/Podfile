@@ -3,6 +3,7 @@ use_frameworks!
 
 target 'SMBCustomRelationshipSegue_Example', :exclusive => true do
   pod "SMBCustomRelationshipSegue", :path => "../"
+  pod 'RESideMenu'
 end
 
 target 'SMBCustomRelationshipSegue_Tests', :exclusive => true do

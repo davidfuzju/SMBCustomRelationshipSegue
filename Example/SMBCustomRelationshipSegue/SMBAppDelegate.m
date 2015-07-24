@@ -1,8 +1,8 @@
 //
 //  SMBAppDelegate.m
-//  SMBCustomRelationshipSegue
+//  SMBRelationShipSegue
 //
-//  Created by David Fu on 07/24/2015.
+//  Created by David Fu on 07/23/2015.
 //  Copyright (c) 2015 David Fu. All rights reserved.
 //
 
