@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'SMBCustomRelationshipSegue_Example', :exclusive => true do
+  pod "SMBCustomRelationshipSegue", :path => "../"
+end
+
+target 'SMBCustomRelationshipSegue_Tests', :exclusive => true do
+  pod "SMBCustomRelationshipSegue", :path => "../"
+
+  
+end
