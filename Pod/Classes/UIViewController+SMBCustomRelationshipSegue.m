@@ -40,8 +40,8 @@
 }
 
 + (void)load {
-    SEL origSelector = @selector(viewDidLoad);
-    SEL newSelector = @selector(smb_viewDidLoad);
+    SEL origSelector = @selector(awakeFromNib);
+    SEL newSelector = @selector(smb_awakeFromNib);
     Method origMethod = class_getInstanceMethod(self, origSelector);
     Method newMethod = class_getInstanceMethod(self, newSelector);
     
@@ -51,7 +51,7 @@
         method_exchangeImplementations(origMethod, newMethod);
 }
 
-- (void)smb_viewDidLoad {
+- (void)smb_awakeFromNib {
     NSArray *realationshipsArray = [self relationships];
     if (realationshipsArray && realationshipsArray.count) {
         [self setOriginalIMPDictionary:[[NSMutableDictionary alloc] init]];
@@ -89,7 +89,7 @@
             
     }
 
-    [self smb_viewDidLoad];
+    [self smb_awakeFromNib];
 }
 
 - (NSString *)selectorStringAndResetSelector:(SEL)selector {
