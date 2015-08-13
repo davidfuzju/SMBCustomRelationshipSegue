@@ -48,10 +48,7 @@ return the array of your property names which you want build a relationship, the
 
 then it’s OK! followings are screenshot building relationships:
 
-![][image-4]
-![][image-5]
-![][image-6]
-![][image-7]
+![][https://github.com/SuperMarioBean/SMBCustomRelationshipSegue/raw/master/1.gif]
 
 ## Requirements
 
