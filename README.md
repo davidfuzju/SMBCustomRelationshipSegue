@@ -32,7 +32,7 @@ there are two examples in example folder:
 return the array of your property names which you want build a relationship, the lib will check it for you whether it is a `one to one` or `one to many`.
 
 > Note: if you overwrite the method `awakeFromNib`, you must call `awakeFromNib` super implementation or the `SMBCustomRelationShipSegue` would not work.
-> `RESideMenu`'s implementation overwrite the `awakeFromNib` and did not call the super implementation, I commit [pull request](https://github.com/romaonthego/RESideMenu/pull/253), however I got no reply
+> `RESideMenu`'s implementation overwrite the `awakeFromNib` and did not call the super implementation, I commit [pull request][7], however I got no reply
 
 2. you need control drag your storyboard. link a `custom relation ship` segue between container view controller and child view controllers. and name the segue identifier .
 
@@ -48,7 +48,7 @@ return the array of your property names which you want build a relationship, the
 
 then it’s OK! followings are screenshot building relationships:
 
-![][https://github.com/SuperMarioBean/SMBCustomRelationshipSegue/raw/master/1.gif]
+![][image-4]
 
 ## Requirements
 
@@ -56,7 +56,7 @@ iOS 7.0 and iOS 7.0 +
 
 ## Installation
 
-SMBCustomRelationshipSegue is available through [CocoaPods][7]. To install
+SMBCustomRelationshipSegue is available through [CocoaPods][8]. To install
 it, simply add the following line to your Podfile:
 
 	pod "SMBCustomRelationshipSegue"
@@ -75,12 +75,10 @@ SMBCustomRelationshipSegue is available under the MIT license. See the LICENSE f
 [4]:	https://github.com/romaonthego/RESideMenu
 [5]:	http://www.objc.io/issues/12-animations/custom-container-view-controller-transitions/
 [6]:	https://github.com/objcio/issue-12-custom-container-transitions
-[7]:	http://cocoapods.org
+[7]:	https://github.com/romaonthego/RESideMenu/pull/253
+[8]:	http://cocoapods.org
 
 [image-1]:	https://img.shields.io/cocoapods/v/SMBCustomRelationshipSegue.svg?style=flat
 [image-2]:	https://img.shields.io/cocoapods/l/SMBCustomRelationshipSegue.svg?style=flat
 [image-3]:	https://img.shields.io/cocoapods/p/SMBCustomRelationshipSegue.svg?style=flat
-[image-4]:	https://raw.githubusercontent.com/SuperMarioBean/SMBCustomRelationshipSegue/master/1.png
-[image-5]:	https://raw.githubusercontent.com/SuperMarioBean/SMBCustomRelationshipSegue/master/2.png
-[image-6]:	https://raw.githubusercontent.com/SuperMarioBean/SMBCustomRelationshipSegue/master/3.png
-[image-7]:	https://raw.githubusercontent.com/SuperMarioBean/SMBCustomRelationshipSegue/master/4.png
+[image-4]:	https://github.com/SuperMarioBean/SMBCustomRelationshipSegue/raw/master/1.gif
