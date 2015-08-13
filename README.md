@@ -31,6 +31,9 @@ there are two examples in example folder:
 
 return the array of your property names which you want build a relationship, the lib will check it for you whether it is a `one to one` or `one to many`.
 
+> Note: if you overwrite the method `awakeFromNib`, you must call `awakeFromNib` super implementation or the `SMBCustomRelationShipSegue` would not work.
+> `RESideMenu`'s implementation overwrite the `awakeFromNib` and did not call the super implementation, I commit [pull request](https://github.com/romaonthego/RESideMenu/pull/253), however I got no reply
+
 2. you need control drag your storyboard. link a `custom relation ship` segue between container view controller and child view controllers. and name the segue identifier .
 
 	+ `one to one` relationship should name with format 
@@ -41,7 +44,7 @@ return the array of your property names which you want build a relationship, the
 
 			relationship_{{propertyName}}_{{index}}
 
-you should ensure the index is continuous and started with 0
+> Note: you should ensure the index is continuous and started with 0
 
 then it’s OK! followings are screenshot building relationships:
 
